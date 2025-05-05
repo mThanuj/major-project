@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from utils.extract_all_features import (
     extract_all_features,
 )
@@ -22,7 +22,7 @@ def extract_features():
 
     features = extract_all_features("/tmp/audio.wav")
 
-    return {"features": features}
+    return jsonify({"features": features})
 
 
 app.run(debug=True)
