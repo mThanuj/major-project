@@ -46,9 +46,9 @@ class SpeechCommandsDataset(Dataset):
                     self.file_paths.append((os.path.join(p, f), lbl))
 
         melkwargs = {
-            "n_fft": 1024,  # -> n_freqs = 1024//2 + 1 = 513
-            "hop_length": 512,  # half-overlap
-            "n_mels": n_mfcc,  # <= 40 ensures no zero‐only filters
+            "n_fft": 400,
+            "hop_length": 160,
+            "n_mels": n_mfcc,
             "f_min": 50,
             "f_max": 8000,
         }
