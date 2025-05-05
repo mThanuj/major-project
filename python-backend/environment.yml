@@ -1,0 +1,11 @@
+name: torch-cuda
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.9
+  - pytorch
+  - pytorch-cuda=12.1
+  - torchaudio
+  - torchvision
+prefix: ./envs/torch-cuda
