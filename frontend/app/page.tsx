@@ -184,7 +184,9 @@ const page = () => {
           <Card className="bg-white bg-opacity-90 shadow-lg rounded-2xl p-4">
             <CardHeader>
               <CardTitle className="text-xl">Detected Keywords</CardTitle>
-              <CardDescription>From MFCC + Autoencoder + CNN</CardDescription>
+              <CardDescription className="text-slate-50">
+                From MFCC + Autoencoder + CNN
+              </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-2">
               {keywords.map((kw, index) => (
