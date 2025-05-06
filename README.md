@@ -41,8 +41,8 @@
 
 ### express-backend-installation
 
-- Run `pnpm install` in the express-backend directory.
-- Run `pnpm dev`
+- Run `npm install` in the express-backend directory.
+- Run `npm dev`
 
 ### flask-backend-installation
 
