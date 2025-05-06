@@ -36,6 +36,4 @@ export const predict = async (req: Request, res: Response) => {
   res.status(200).json({
     keywords,
   });
-
-  res.status(200).json({ message: "Audio file uploaded successfully" });
 };

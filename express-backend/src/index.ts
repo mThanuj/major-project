@@ -13,5 +13,5 @@ app.use(express.json());
 app.use("/predict", upload.single("audio"), predictRouter);
 
 app.listen(config.PORT, () => {
-  console.log("Server listening on port 3000");
+  console.log("Server listening on port", config.PORT);
 });
