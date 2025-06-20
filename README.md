@@ -19,7 +19,7 @@
 - It also contains the training and evaluation code for the model.
 - Technologies used:
   - flask: to handle http routes
-  - pytorch: to handle model training
+  - torch: to handle model training
 
 ### frontend
 

@@ -10,7 +10,7 @@ from model.utils.dataset import SpeechCommandsDataset
 def extract_all_features(
     audio_file: str,
     window_size: float = 1.0,
-    hop_size: float = 1.0,  # default to non-overlapping windows
+    hop_size: float = 1.0,
     sample_rate: int = 16000,
     n_mfcc: int = 40,
     target_length: int = 100,

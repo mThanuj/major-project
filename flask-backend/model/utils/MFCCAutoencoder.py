@@ -64,6 +64,7 @@ class ImprovedMFCCAutoencoder(nn.Module):
 
         d1 = self.up1(d2)
         out = self.final_conv(d1)
+
         return F.interpolate(out, size=(40, 100), mode="bilinear", align_corners=False)
 
     def get_encoder(self) -> nn.Sequential:
